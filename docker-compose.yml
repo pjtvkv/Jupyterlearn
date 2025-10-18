@@ -5,5 +5,7 @@ services:
       - "8888:8888"
     volumes:
       - .:/workspace
+    env_file:
+      - .env
     environment:
       JUPYTER_ENABLE_LAB: "yes"

@@ -24,3 +24,9 @@ To add Python packages, either:
 
 ### Notebook Storage
 Your repository directory is mounted into the container at `/workspace`. Any notebooks you create or edit are saved to the host filesystem automatically.
+
+### Environment Variables
+To configure secrets such as the OpenAI API key:
+1. Copy `.env.example` to `.env`.
+2. Replace `sk-...` with your actual OpenAI API key.
+3. Restart the Compose stack so the container picks up the new environment variables.

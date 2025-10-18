@@ -11,3 +11,5 @@ notebook
 torch
 torchvision
 torchaudio
+openai
+agents
